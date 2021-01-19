@@ -10,3 +10,17 @@ let student = {
     }
 };
 student.details( )
+console.log("\n\n")
+
+//factory function
+function student_details(){
+    return{
+        st_name:"Bikram Kumal",
+        st_email:"bikram@gmail.com",
+        st_details:function(){
+            console.log(this.st_name+' '+this.st_email)
+        }
+    }
+};
+let students = student_details();
+students.st_details();
