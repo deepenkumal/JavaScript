@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function show_alert(){
+		alert ("hello i am alert");
+	}
+	function show_confirm(){
+		var r = confirm("press a button");
+		if(r==true){
+		document.write("you pressed ok!");
+
+		}
+		else{
+		document.write("You pressed cancel");
+		}
+	}
+		function show_prompt(){
+			var name=prompt("enter your name","defaultValue");
+			alert(name);
+		}
+	
+</script>
+<h2>Alert</h2>
+<input type="button"onclick="show_alert()" name="alert" value="Alert">
+
+<h1>Confirm</h1>
+<input type="button"onclick="show_confirm()" name="confirm" value="confirm">
+
+<h3>prompt</h3>
+<input type="button" onclick="show_prompt()" name="prompt" value="Prompt">
+</body>
+</html>

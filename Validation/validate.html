@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form validation</title>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style/styles.css">
+
+</head>
+<body>
+<form action="#" name="myForm"
+ onsubmit="return(validate());">
+ <table cellspacing="2" cellpadding="2" border="1" align="center">
+ 	<tr>
+ 		<td align="right" class="item">Name</td>
+ 		<td> <input type="text" name="Name" class="input" /> </td>
+ 	</tr>
+ 	<tr>
+ 		<td align="right">EMail</td>
+ 		<td> <input type="text" name="EMail" class="input"/> </td>
+ 	</tr>
+ 	<tr>
+ 		<td align="right">Zip Code</td>
+ 		<td> <input type="text" name="Zip" class="input"/> </td>
+ 	</tr>
+ 	<tr>
+ 		<td align="right">Country</td>
+ 		<td> 
+ 		<select name="Country" class="input">
+ 			<option value="-1" selected="">[Choose yours]</option>
+ 			<option value="1">USA</option>
+ 			<option value="2">UK</option>
+ 			<option value="3">NEPAL</option>
+
+ 		</select> </td>
+ 	</tr>
+ 	<tr>
+ 	
+ 		<td align="center" colspan="2"> <input type="submit" value="Submit" name ="Submit" class="submit" /> </td>
+ 		
+ 	</tr>
+ </table>
+</form>
+</body>
+</html>

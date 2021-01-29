@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function show_prompt(){
+			try{
+				var name=prompt2("enter your name","defaultValue");
+				alert(name);
+			}
+			catch(err)
+			{
+				alert(err);
+				//console.log();
+
+			}
+			
+		}
+	</script>
+	<h3>prompt</h3>
+<input type="button" onclick="show_prompt()" name="prompt" value="Prompt">
+</body>
+</html>
